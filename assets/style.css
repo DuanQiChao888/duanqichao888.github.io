@@ -21,14 +21,16 @@ a:hover {
 }
 
 .site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px 18px;
   max-width: 900px;
   margin: 0 auto;
   padding: 24px 20px 8px;
-  text-align: right;
 }
 
 .site-nav a {
-  margin-left: 18px;
   color: #333;
   font-size: 15px;
 }
@@ -60,11 +62,27 @@ a:hover {
   font-weight: 400;
 }
 
+.intro-text,
+section {
+  min-width: 0;
+}
+
+.intro p,
+section p,
+section li {
+  overflow-wrap: anywhere;
+}
+
 .intro p {
   margin: 4px 0;
 }
 
 .role {
+  font-weight: 600;
+}
+
+.appointment {
+  color: #174f7a;
   font-weight: 600;
 }
 
@@ -107,12 +125,12 @@ strong {
 
 @media (max-width: 680px) {
   .site-nav {
-    text-align: left;
+    justify-content: flex-start;
+    gap: 8px 14px;
   }
 
   .site-nav a {
-    display: inline-block;
-    margin: 0 14px 8px 0;
+    display: block;
   }
 
   .intro {
