@@ -4,14 +4,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex, follow" />
-  <meta http-equiv="refresh" content="0; url=https://duanqichao888.github.io/qcduan.github.io/" />
-  <link rel="canonical" href="https://duanqichao888.github.io/qcduan.github.io/" />
-  <title>页面已移动 | 段启超个人主页</title>
+  <link rel="canonical" href="https://duanqichao888.github.io/" />
+  <title>页面未找到 | 段启超个人主页</title>
   <script>
-    window.location.replace("https://duanqichao888.github.io/qcduan.github.io/");
+    (function () {
+      var target = new URL("https://duanqichao888.github.io/");
+      var prefix = "/qcduan.github.io/";
+      var path = window.location.pathname;
+      if (path !== "/qcduan.github.io" && path.indexOf(prefix) !== 0) return;
+      target.pathname = path === "/qcduan.github.io" ? "/" : "/" + path.slice(prefix.length).replace(/^\/+/, "");
+      target.search = window.location.search;
+      target.hash = window.location.hash;
+      window.location.replace(target.href);
+    }());
   </script>
 </head>
 <body>
-  <p><a href="https://duanqichao888.github.io/qcduan.github.io/">段启超个人主页</a></p>
+  <h1>页面未找到</h1>
+  <p>你访问的页面可能已移动。<a href="https://duanqichao888.github.io/">返回段启超个人主页</a></p>
 </body>
 </html>
